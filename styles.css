@@ -1,13 +1,22 @@
 body {
+   font-family: 'Press Start 2P', cursive;
   text-align: center;
   background-color: #011F3F;
+   color: #FEF2BF;
 }
-
+nav{
+  display: flex;
+  justify-content:end;
+  gap: 20px;
+}
+nav input{ 
+ transform:scale(3);  
+}
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+ line-height: 1.5;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+ 
 }
 
 .container {
