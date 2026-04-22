@@ -13,7 +13,7 @@ function start(){
         $("h1").text("level "+level)
         next(rand);
         if(!$("input").is(":checked"))
-        $(".btn").on("click touchstart",HardGameplay);
+        $(".btn").on("click touchstart",NormalGameplay);
     else{
          $(".btn").on("click touchstart",EasyGameplay);
     }
@@ -50,7 +50,7 @@ function clicked(key){
    setTimeout(function(){
      $(key).removeClass("pressed");},100);
  }
- function HardGameplay(event){
+ function NormalGameplay(event){
  clicked("#"+this.id);
            event.preventDefault();
            if(rand[i]==this.id)
